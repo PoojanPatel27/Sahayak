@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DisasterDetectionDataUpload">
+
+    <TextView
+        android:id="@+id/titleTVDisasterDataUpload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Static Data Upload"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/windSpeedETDU"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Wind Speed"
+        android:layout_below="@id/titleTVDisasterDataUpload"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/rainAmmETDU"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Rain Ammount"
+        android:layout_below="@id/windSpeedETDU"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/humidityETDU"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Humidity"
+        android:layout_below="@id/rainAmmETDU"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/temperatureETDU"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Temperature"
+        android:layout_below="@id/humidityETDU"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/predictionETDU"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Predection"
+        android:layout_below="@id/temperatureETDU"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/uploadDataBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/predictionETDU"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Upload Data"/>
+
+</RelativeLayout>

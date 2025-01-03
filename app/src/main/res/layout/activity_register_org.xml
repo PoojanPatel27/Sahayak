@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterOrg">
+
+    <ImageView
+        android:id="@+id/loginImg"
+        android:layout_width="200dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/reg_user_icon"
+        android:layout_marginTop="10dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="20dp"
+        android:layout_below="@id/loginImg"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="20dp"
+        android:backgroundTint="#F5F5F5">
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/loginRel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ProgressBar
+                android:id="@+id/orgProgbarReg"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/RegisterTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Register Organization"
+                android:layout_marginTop="20dp"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:layout_gravity="center"/>
+
+
+
+            <EditText
+                android:id="@+id/ngoNameEtReg"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/RegisterTv"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:hint="Agencies name"
+                android:paddingLeft="20dp"
+                android:drawablePadding="10dp"
+                android:drawableLeft="@drawable/ic_person"
+                android:background="@drawable/custom_edittext"/>
+
+            <EditText
+                android:id="@+id/ngocategoryEtReg"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/ngomobileNoEtReg"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:hint="Experties"
+                android:paddingLeft="20dp"
+                android:drawablePadding="10dp"
+                android:drawableLeft="@drawable/ic_category"
+                android:background="@drawable/custom_edittext"/>
+
+            <EditText
+                android:id="@+id/ngomobileNoEtReg"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/ngoNameEtReg"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:hint="Contact No"
+                android:inputType="number"
+                android:maxLength="10"
+                android:paddingLeft="20dp"
+                android:drawablePadding="10dp"
+                android:drawableLeft="@drawable/ic_phone"
+                android:background="@drawable/custom_edittext"/>
+
+            <EditText
+                android:id="@+id/ngopasswordEtReg"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/ngoemailEtReg"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:hint="Password"
+                android:paddingLeft="20dp"
+                android:drawableLeft="@drawable/ic_lock_black"
+                android:drawablePadding="10dp"
+                android:background="@drawable/custom_edittext"/>
+
+            <EditText
+                android:id="@+id/ngoemailEtReg"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/ngocategoryEtReg"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:drawableLeft="@drawable/ic_email_black"
+                android:drawablePadding="10dp"
+                android:paddingLeft="20dp"
+                android:background="@drawable/custom_edittext"/>
+
+            <EditText
+                android:id="@+id/ngoaddressEtReg"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/ngopasswordEtReg"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:hint="Address"
+                android:drawablePadding="10dp"
+                android:paddingLeft="20dp"
+                android:drawableLeft="@drawable/ic_add_location"
+                android:background="@drawable/custom_edittext"/>
+
+            <EditText
+                android:id="@+id/orgAreaPinReg"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/ngoaddressEtReg"
+                android:background="@drawable/custom_edittext"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="20dp"
+                android:hint="Area pincode"
+                android:inputType="number"
+                android:maxLength="6"
+                android:drawableLeft="@drawable/ic_location_pincode"
+                android:drawablePadding="10dp"
+                android:paddingLeft="20dp"/>
+
+            <Button
+                android:id="@+id/orgRegBtn"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/autoLocationTv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                android:text="Register"/>
+
+            <TextView
+                android:id="@+id/autoLocationTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/orgAreaPinReg"
+                android:text="Get location Automatically"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/latTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Latitude"
+                android:layout_below="@id/orgRegBtn"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/longTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Longtitude"
+                android:layout_below="@id/latTV"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                />
+
+
+        </RelativeLayout>
+
+        </ScrollView>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/noaccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="120dp"/>
+
+    <TextView
+        android:id="@+id/registerTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:visibility="gone"
+        android:textColor="#38A3FF "
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/noaccount"
+        android:layout_marginStart="5dp"/>
+
+</RelativeLayout>

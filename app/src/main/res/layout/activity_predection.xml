@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PredectionActivity">
+
+
+
+
+
+    <TextView
+        android:id="@+id/predictionTVTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Predection"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:textSize="22sp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/predictionTVTitle"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/temperaturePredTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Temperature:"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/humidityPredTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Humidity"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/windSpeedTVPred"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wind Speed"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/pressurePredTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="pressure:"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/predectionResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Result"
+        android:layout_centerInParent="true"
+        android:textColor="@color/black"
+        android:textSize="18sp"/>
+    <Button
+        android:id="@+id/predectionResultBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Result"
+        android:layout_below="@id/predectionResult"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:clickable="false"/>
+
+    <RelativeLayout
+        android:id="@+id/whiteScreen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:translationZ="10dp"
+        android:visibility="visible">
+
+        <ProgressBar
+            android:id="@+id/progressBarPredection"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true">
+
+        </ProgressBar>
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

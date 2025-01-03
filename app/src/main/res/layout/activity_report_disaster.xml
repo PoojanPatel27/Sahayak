@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReportDisaster">
+
+    <TextView
+        android:id="@+id/titleTVReportDisater"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Report A Disaster"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <ImageView
+        android:id="@+id/disasterIV"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/titleTVReportDisater"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/add_image_ic"/>
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/disasterIV"
+        android:layout_marginTop="20dp">
+
+        <EditText
+            android:id="@+id/disasterLocationET"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Location"
+            android:background="@drawable/custom_edittext"
+            android:paddingStart="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"/>
+
+
+        <EditText
+            android:id="@+id/contactET"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Contact no"
+            android:inputType="number"
+            android:maxLength="10"
+            android:background="@drawable/custom_edittext"
+            android:paddingStart="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:id="@+id/disasterDescriptionET"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:hint="Description"
+            android:background="@drawable/custom_edittext"
+            android:paddingStart="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            android:id="@+id/submitDisasterBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/autoLocationTVDisasterReport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Click to get locatation automatically"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"/>
+
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserProfile">
+
+    <TextView
+        android:id="@+id/titleUserProfileTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User Profile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+       android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profileIV"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/titleUserProfileTV"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_user"/>
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profileIV"
+        android:backgroundTint="#F1F1F1">
+
+        <EditText
+            android:id="@+id/nameETUserProfile"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"
+            android:focusable="false"
+            android:clickable="false"
+            android:hint="Name"
+            android:paddingStart="10dp"
+            android:background="@drawable/profile_edittext_bg"/>
+
+        <EditText
+            android:id="@+id/emailETUserProfile"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/nameETUserProfile"
+            android:focusable="false"
+            android:clickable="false"
+            android:hint="Email"
+            android:paddingStart="10dp"
+            android:background="@drawable/profile_edittext_bg"/>
+
+        <EditText
+            android:id="@+id/contactETUserProfile"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/emailETUserProfile"
+            android:focusable="false"
+            android:clickable="false"
+            android:hint="contact"
+            android:paddingStart="10dp"
+            android:background="@drawable/profile_edittext_bg"/>
+
+
+    </RelativeLayout>
+
+<!--    <TextView-->
+<!--        android:id="@+id/nameTVUserProfile"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Name"-->
+<!--        android:visibility="gone"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textSize="20sp"-->
+<!--        android:layout_marginStart="20dp"-->
+<!--        android:layout_below="@id/profileIV"-->
+<!--        android:layout_marginTop="10dp"/>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/emailTVUserProfile"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Email"-->
+<!--        android:visibility="gone"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textSize="20sp"-->
+<!--        android:layout_below="@id/nameTVUserProfile"-->
+<!--        android:layout_marginStart="20dp"-->
+<!--        android:layout_marginTop="10dp"/>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/contactTVUserProfile"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Contact"-->
+<!--        android:visibility="gone"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textSize="20sp"-->
+<!--        android:layout_below="@id/emailTVUserProfile"-->
+<!--        android:layout_marginStart="20dp"-->
+<!--        android:layout_marginTop="10dp"/>-->
+
+    <TextView
+        android:id="@+id/titleHelpHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Help History"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_below="@id/rl1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/userProfileRV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/titleHelpHistory"
+        android:layout_marginTop="10dp"/>
+
+
+
+
+
+</RelativeLayout>

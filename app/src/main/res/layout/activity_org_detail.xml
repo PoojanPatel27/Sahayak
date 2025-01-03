@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrgDetailActivity"
+    android:background="@drawable/bg">
+
+    <TextView
+        android:id="@+id/titleTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Details Of Organization"
+        android:layout_centerHorizontal="true"
+        android:textSize="26sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/titleName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name: "
+        android:layout_below="@id/titleTv"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="10dp"/>
+
+    <TextView
+        android:id="@+id/orgNameDtl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="name of organization "
+        android:layout_below="@id/titleTv"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_toRightOf="@id/titleName" />
+
+    <TextView
+        android:id="@+id/orgcategoryDtlTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleName"
+        android:text="Experties:"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/orgcategoryTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleName"
+        android:text="category of organization"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        android:layout_toRightOf="@id/orgcategoryDtlTv"/>
+
+    <TextView
+        android:id="@+id/orgContactDtlTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/orgcategoryDtlTv"
+        android:text="Contact No::"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/orgContactTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/orgcategoryTv"
+        android:text="contact of organization"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        android:layout_toRightOf="@id/orgContactDtlTv"/>
+
+    <TextView
+        android:id="@+id/orgAddressDtlTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address:"
+        android:layout_below="@id/orgContactTv"
+        android:textSize="22sp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/orgAddressTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/orgContactTv"
+        android:text="contact of organization"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        android:layout_toRightOf="@id/orgAddressDtlTitle"/>
+
+
+
+
+</RelativeLayout>

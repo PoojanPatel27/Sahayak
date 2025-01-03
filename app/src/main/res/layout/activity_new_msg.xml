@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewMsgActivity">
+
+    <RelativeLayout
+        android:id="@+id/actionBarRel"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#4382FF">
+
+        <ImageButton
+            android:id="@+id/backImgBtnComOrg"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/ic_back"
+            android:layout_centerVertical="true"/>
+
+        <ImageView
+            android:id="@+id/msgImageviewBar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:visibility="gone"
+            android:src="@drawable/ic_launcher_background"
+            android:layout_toRightOf="@id/backImgBtnComOrg"
+            android:layout_marginStart="5dp"/>
+
+        <TextView
+            android:id="@+id/NameTitleMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User's Name"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/msgImageviewBar"
+            android:layout_marginStart="10dp"
+            android:textSize="18sp"/>
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/msgRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/actionBarRel"
+        android:layout_above="@id/msgEtRlOrg"/>
+
+
+    <RelativeLayout
+        android:id="@+id/msgEtRlOrg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFF"
+        android:layout_alignParentBottom="true"
+        android:padding="5dp">
+
+        <EditText
+            android:id="@+id/etNewMsg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type A Message..."
+            android:background="@android:color/transparent"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/btnSendmsg"/>
+
+        <ImageButton
+            android:id="@+id/btnSendmsg"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/ic_send"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"/>
+
+
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

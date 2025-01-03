@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DisasterReportDetailsOrg">
+
+    <TextView
+        android:id="@+id/titleTVDisasterDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Disaster Details"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/titleTVDisasterDetails"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/disasterImgIVDisasterDetails"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/locationTVDisasterDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Disaster Location"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/contactTVDisasterDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact no"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description About Disaster:"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/descriptionTVDisasterDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="This is description about disaster..."
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            android:id="@+id/openMapBtn"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Open Map"
+            android:layout_marginTop="250dp"
+            android:layout_gravity="center_horizontal"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/loginImg"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/icon_login"
+        android:layout_marginTop="10dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="20dp"
+        android:layout_below="@id/loginImg"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="20dp"
+        android:backgroundTint="#F5F5F5">
+
+        <RelativeLayout
+            android:id="@+id/loginRel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ProgressBar
+                android:id="@+id/progBarLogin"
+                android:visibility="gone"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"/>
+
+
+            <TextView
+                android:id="@+id/RegisterTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Login User"
+                android:layout_marginTop="20dp"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="26sp"
+                android:layout_gravity="center"/>
+
+            <EditText
+                android:id="@+id/emailEtLoginUser"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/RegisterTv"
+                android:layout_marginTop="50dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:hint="Email"
+                android:drawableLeft="@drawable/ic_email_black"
+                android:drawablePadding="10dp"
+                android:paddingLeft="20dp"
+                android:background="@drawable/custom_edittext"/>
+
+            <EditText
+                android:id="@+id/passwordEtloginUser"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/emailEtLoginUser"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:hint="Password"
+                android:paddingLeft="20dp"
+                android:drawableLeft="@drawable/ic_lock_black"
+                android:drawablePadding="10dp"
+                android:background="@drawable/custom_edittext"/>
+
+            <Button
+                android:id="@+id/loginBtn"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/passwordEtloginUser"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:text="Login"/>
+
+            <TextView
+                android:id="@+id/noaccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Don't have an account?"
+                android:layout_below="@id/loginBtn"
+                android:layout_marginLeft="70dp"/>
+
+            <TextView
+                android:id="@+id/registerTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Register"
+                android:textColor="#38A3FF"
+                android:layout_below="@id/loginBtn"
+                android:layout_toRightOf="@id/noaccount"
+                android:layout_marginStart="5dp"/>
+
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent">-->
+
+<!--            </RelativeLayout>-->
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/organizationLoginTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Organization login"
+        android:textColor="#38A3FF"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:layout_marginStart="5dp"/>
+
+
+
+
+</RelativeLayout>

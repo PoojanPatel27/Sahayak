@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DisasterDetection">
+
+    <TextView
+        android:id="@+id/titleDisasterDetectionTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Disaster Detection"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"/>
+
+
+    <TextView
+        android:id="@+id/titleCurrentLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current Location: Ishwarpura,Vadodara"
+        android:layout_below="@id/titleDisasterDetectionTV"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="20dp"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/windTVDD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wind Speed: "
+        android:layout_below="@id/titleCurrentLocation"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="20dp"
+        android:textSize="18sp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/humidityTVDD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="humidity :"
+        android:layout_below="@id/windTVDD"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:textSize="18sp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/rainAmmTVDD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rain Amount:"
+        android:layout_below="@id/humidityTVDD"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:textSize="18sp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/temperatureTVDD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Temperature :"
+        android:layout_below="@id/rainAmmTVDD"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:textSize="18sp"
+        android:textColor="@color/black"/>
+
+
+
+    <Button
+        android:id="@+id/predictBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/temperatureTVDD"
+        android:layout_marginTop="30dp"
+        android:text="Disaster Prediction"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/predictionTVDD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Prediction:"
+        android:layout_below="@id/predictBtn"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        android:textColor="@color/black"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:visibility="visible"
+        android:layout_centerInParent="true"
+        android:translationZ="10dp"/>
+
+
+
+
+</RelativeLayout>
